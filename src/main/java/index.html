@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>simple calculator</title>
+  
+</head>
+<body>
+  Enter number1:<input type="number" id="num1" required autofocus>
+  Enter number2:<input type="number" id="num2" required>
+  <input type="button" value="ADD" onclick="add();" id="btn">
+  <input type="button" value="SUB" onclick="sub();" id="btn">
+  <input type="button" value="MUL" onclick="mul();" id="btn">
+  <input type="button" value="DIV" onclick="div();" id="btn">
+  <div id="result">
+    
+  </div>
+  <script>
+    function add()
+    {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var bttn=document.getElementById("btn").value;
+      var res;
+      res=+n1 + +n2;
+      alert("RESULT="+res);
+      document.getElementById("result").innerText=res;
+    }
+    function sub()
+    {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var bttn=document.getElementById("btn").value;
+      var res;
+      res=+n1 - +n2;
+      alert("RESULT="+res);
+      document.getElementById("result").innerText=res;
+    }
+    function mul()
+    {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var bttn=document.getElementById("btn").value;
+      var res;
+      res=+n1 * +n2;
+      alert("RESULT="+res);
+      document.getElementById("result").innerText=res;
+    }
+    function div()
+    {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var bttn=document.getElementById("btn").value;
+      var res;
+     
+      res=+n1 / +n2;
+      alert("RESULT="+res);
+      document.getElementById("result").innerText=res;
+    }
+  </script>
+
+</body>
+</html>
